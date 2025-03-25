@@ -8,14 +8,21 @@
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="আপনার লোগো" width="150" height="auto">
+    <img src="images/logo.png" alt="আপনার লোগো" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#hero">হোম</a></li>
+        <li><a href="#jobs">চাকরির পোস্ট</a></li>
+        <li><a href="#signup">সাইন আপ</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main class="container">
     <!-- হিরো সেকশন -->
-    <section class="hero">
-      <h1>চমৎকার অফার আবিষ্কার করুন</h1>
-      <p>আপনিও হাজার হাজার মানুষের মতো আমাদের এক্সক্লুসিভ ডিল উপভোগ করুন। এখনই আপনার অফার নিন!</p>
+    <section id="hero" class="hero">
+      <h1>চমৎকার অফার ও চাকরি সুযোগ</h1>
+      <p>CPA মার্কেটিং এবং microwork/job posts এর মাধ্যমে আয়ের নতুন উপায় আবিষ্কার করুন। এখনই আপনার সুযোগ নিন!</p>
       <a href="#signup" class="cta-button">অফার গ্রহণ করুন</a>
     </section>
 
@@ -23,31 +30,53 @@
     <section class="benefits">
       <h2>কেন আমাদের নির্বাচন করবেন?</h2>
       <ul>
-        <li>এক্সক্লুসিভ ডিলস</li>
+        <li>উচ্চ কমিশন ভিত্তিক অফার</li>
         <li>২৪/৭ কাস্টমার সাপোর্ট</li>
-        <li>হাজার মানুষের বিশ্বাস</li>
-        <li>মানি-ব্যাক গ্যারান্টি</li>
+        <li>বিশ্বাসযোগ্য এবং প্রমাণিত সফলতা</li>
+        <li>দ্রুত আয়ের সুযোগ</li>
       </ul>
     </section>
-	<h1>AMAR LANDINGPAGE</h1>
+
+    <!-- Job Posts / Microwork Section -->
+    <section id="jobs" class="jobs">
+      <h2>Microwork / চাকরির পোস্ট</h2>
+      <p>নীচের চাকরির পোস্টগুলির মাধ্যমে আপনি অতিরিক্ত আয় করতে পারেন:</p>
+      <div class="job-list">
+        <div class="job-post">
+          <h3>ডাটা এন্ট্রি কাজ</h3>
+          <p>সরল ডাটা এন্ট্রি কাজ। দ্রুত ও নির্ভুল কাজের মাধ্যমে আয় করুন।</p>
+          <a href="#" class="cta-button">আরো জানুন</a>
+        </div>
+        <div class="job-post">
+          <h3>ওয়েবসাইট রিভিউ</h3>
+          <p>ওয়েবসাইট বা অ্যাপ রিভিউ করে ছোট আয় করার সুযোগ।</p>
+          <a href="#" class="cta-button">আরো জানুন</a>
+        </div>
+        <div class="job-post">
+          <h3>মাইক্রো টাস্কস</h3>
+          <p>বিভিন্ন মাইক্রো টাস্কসের মাধ্যমে আয়ের সুযোগ।</p>
+          <a href="#" class="cta-button">আরো জানুন</a>
+        </div>
+      </div>
+    </section>
 
     <!-- প্রশংসাপত্র সেকশন -->
     <section class="testimonials">
-      <h2>আমাদের গ্রাহকদের মন্তব্য</h2>
+      <h2>গ্রাহকদের মন্তব্য</h2>
       <blockquote>
-        <p>"এই অফার আমার জীবন বদলে দিয়েছে! অত্যন্ত সুপারিশ করি।"</p>
+        <p>"এই অফার ও চাকরির পোস্ট আমার জীবন বদলে দিয়েছে! অত্যন্ত সুপারিশ করি।"</p>
         <footer>– <strong>জেন ডো</strong></footer>
       </blockquote>
       <blockquote>
-        <p>"অসাধারণ ফলাফল, একটি গেম-চেঞ্জার!"</p>
+        <p>"অসাধারণ ফলাফল, আয়ের নতুন উপায় খুঁজে পেতে সাহায্য করেছে!"</p>
         <footer>– <strong>জন স্মিথ</strong></footer>
       </blockquote>
     </section>
 
-    <!-- সাইনআপ ফর্ম (CPA প্ল্যাটফর্মের শর্ত অনুযায়ী) -->
+    <!-- সাইন আপ ফর্ম -->
     <section id="signup" class="signup">
       <h2>সাইন আপ করুন</h2>
-      <p>আপনার অফার পেতে নিচের ফর্মটি পূরণ করুন:</p>
+      <p>আপনার অফার ও চাকরির পোস্টের জন্য নিচের ফর্মটি পূরণ করুন:</p>
       <form id="signup-form">
         <input type="text" name="name" placeholder="আপনার নাম" required>
         <input type="email" name="email" placeholder="আপনার ইমেইল" required>

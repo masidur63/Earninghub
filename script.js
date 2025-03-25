@@ -6,8 +6,16 @@ document.getElementById("signup-form").addEventListener("submit", function(event
   const name = event.target.name.value;
   const email = event.target.email.value;
 
-  // এখানে আপনি AJAX ব্যবহার করে আপনার ব্যাকএন্ডে ডেটা পাঠাতে পারেন
-  // উদাহরণস্বরূপ: fetch() অথবা XMLHttpRequest ব্যবহার করুন।
+  // এখানে আপনি AJAX (যেমন fetch API) ব্যবহার করে ব্যাকএন্ডে ডেটা পাঠাতে পারেন
+  // উদাহরণ:
+  // fetch('https://your-backend-api.com/signup', {
+  //   method: 'POST',
+  //   headers: {'Content-Type': 'application/json'},
+  //   body: JSON.stringify({ name, email })
+  // })
+  // .then(response => response.json())
+  // .then(data => console.log(data))
+  // .catch(error => console.error(error));
 
   // ফর্ম সাবমিশনের পর একটি বার্তা দেখানো
   const formMessage = document.getElementById("form-message");
