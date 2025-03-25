@@ -1,0 +1,134 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+header img {
+  max-width: 150px;
+}
+
+/* Hero Section */
+.hero {
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+.cta-button {
+  background: #28a745;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+.cta-button:hover {
+  background: #218838;
+}
+
+/* Benefits Section */
+.benefits, .testimonials, .signup {
+  background: #fff;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.benefits h2, .testimonials h2, .signup h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.benefits ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.benefits li {
+  flex: 1 1 250px;
+  margin: 10px;
+  padding: 10px;
+  background: #e9ecef;
+  border-radius: 5px;
+}
+
+/* Testimonials Section */
+.testimonials blockquote {
+  margin: 20px;
+  padding: 20px;
+  border-left: 5px solid #28a745;
+  background: #f9f9f9;
+}
+.testimonials blockquote p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.testimonials blockquote footer {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Signup Form */
+.signup form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signup input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.signup button {
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .benefits ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefits li {
+    width: 80%;
+  }
+}
